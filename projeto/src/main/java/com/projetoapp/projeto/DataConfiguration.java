@@ -1,4 +1,4 @@
-/*package com.projetoapp.projeto;
+package com.projetoapp.projeto;
 
 import javax.sql.DataSource;
 
@@ -9,6 +9,8 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
+
+
 //CLASSE DE CONFIGURAÇÃO DO BANCO DE DADOS
 @Configuration
 public class DataConfiguration {
@@ -18,9 +20,9 @@ public class DataConfiguration {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         //URL DO BANCO
-        dataSource.setUrl("jdbc:mysql://localhost:3306/projetoapp");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/testealdrik");
         dataSource.setUsername("root");
-        dataSource.setPassword("123");
+        dataSource.setPassword("");
         return dataSource;
     }
 	
@@ -38,4 +40,4 @@ public class DataConfiguration {
 		return adapter;
 	}
 
-}*/
+}
