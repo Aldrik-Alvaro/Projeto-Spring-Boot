@@ -1,4 +1,4 @@
-package com.projetoapp.projeto;
+/*package com.projetoapp.projeto;
 
 import javax.sql.DataSource;
 
@@ -38,4 +38,4 @@ public class DataConfiguration {
 		return adapter;
 	}
 
-}
+}*/
