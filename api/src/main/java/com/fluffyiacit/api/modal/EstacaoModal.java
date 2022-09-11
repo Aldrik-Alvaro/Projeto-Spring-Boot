@@ -11,7 +11,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity
+@Entity(name= "estacao")
 @Table(name= "estacao")
 @Getter
 @Setter
@@ -21,24 +21,24 @@ public class EstacaoModal {
 	
 	@Id
 	@Column(name= "cod_wmo",length = 4, nullable = false)
-	private String codWmo;
+	private String cod_wmo;
 	@Column(name= "estacao_nome",length = 60, nullable = false, unique = true)
-	private String estacaoNome;
+	private String estacao_nome;
 	@Column(name= "estacao_regiao",length = 60, nullable = false)
-	private String estacaoRegiao;
+	private String estacao_regiao;
 	@Column(name= "estacao_estado",length = 2, nullable = false)
-	private String estacaoEstado;
-	@Column( name= "estacaoLongitude",length = 20,nullable = false)
-	private BigDecimal estacaoLongitude;
+	private String estacao_estado;
+	@Column( name= "estacao_longitude",length = 20,nullable = false)
+	private BigDecimal estacao_longitude;
 	@Column(name ="estacao_latitude",length = 20,nullable = false)
-	private BigDecimal estacaoLatitude;
+	private BigDecimal estacao_latitude;
 	@Column(name="estacao_altitude",length = 20, nullable = false)
-	private BigDecimal estacaoAltitude;
+	private BigDecimal estacao_altitude;
 	@ColumnDefault(value = "A")
-	//@Column(name="estacao_datafundacao", nullable = false)
-	private Timestamp estacaoDatafundacao;
+	@Column(name="estacao_datafundacao", nullable = false)
+	private Timestamp estacao_datafundacao;
 	@Column(name = "estacao_status", length = 1, nullable = false)
-	private String estacaoStatus;
+	private String estacao_status;
 	
 	
 }
